@@ -15,18 +15,18 @@ let food ={
 
 function criarBG(){
     context.fillStyle = "lightgreen"; //cor de fundo
-    context.fillRect(0, 0, 16 * box, 16 * box); //desenha o quadrado onde o jogo ocorre
+    context.fillRect(0, 0, 20 * box, 20 * box); //desenha o quadrado onde o jogo ocorre
 }
 
 function criarCobrinha (){
     for(i=0; i < snake.length; i++){
-        context.fillStyle = "green";
+        context.fillStyle = "#1E90FF";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
 
 function drawFood (){
-    context.fillStyle = "red";
+    context.fillStyle = "#FF0000";
     context.fillRect(food.x, food.y, box, box);
 }
 
